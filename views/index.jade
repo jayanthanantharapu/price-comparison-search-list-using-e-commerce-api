@@ -1,3 +1,4 @@
+doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
@@ -17,6 +18,8 @@ html(lang='en')
               .box-inner.padding
                 // Search Bar
                 .row
+                center
+                  img.img-responsive(src='/images/pricecutsmall.png')
                   .col-lg-12
                     .panel.panel-default
                       .input-group
@@ -25,186 +28,94 @@ html(lang='en')
                           button.btn.btn-default(type='button' ,onclick='sendFormData()')
                             i.mdi-action-search.i-20
                 // /
-                .card
-                  .card-body.clearfix
-                    .col-lg-2.col-md-2.col-sm-3
-                      .item
-                        img.w-full.r-t(src='/images/api.jpeg', alt='')
-                    .col-md-3
-                      .m-b.m-t-sm.h2
-                        span Apple iPhone 5S
-                      a.btn.btn-sm.btn-success.m-b.p-h.no-border Buy Now
-                      br
-                      button.btn.m-v-xs.btn-info
-                        | Best Price 
-                        b.badge.bg-info.m-l-xs 30393
-                      br
-                      button.btn.m-v-xs.btn-primary
-                        | COD 
-                        i.mdi-action-done.i-24
-                      br
-                      button.btn.m-v-xs.btn-primary
-                        | EMI 
-                        i.mdi-action-highlight-remove.i-24
-                      br
-                      button.btn.m-v-xs.btn-primary
-                        | Stock 
-                        i.mdi-action-done.i-24
-                      br
-                      button.btn.m-v-xs.btn-primary Color &nbsp
-                      span.label.label-lg Space Grey &nbsp
-                      span.label.label-lg Gold
-                    .col-md-7
-                      .panel.panel-card
-                        .p
-                          h3 Description
-                          p
-                            | The bigger the better - the Apple iPhone 6 is an exemplary of this phrase. The meticulously crafted iPhone 6 is truly an epitome of great taste and elegance. Beautiful Unibody Design Extremely thin, the iPhone 6 flaunts a seamless design with the smooth
-                            | blend of anodised aluminium, stainless steel and the curved, polished glass. Incredibly light, the beautifully crafted iPhone 6 feels great in your hands. Thanks to its innovative design, the iPhone 6 provides an intuitive experience and
-                            | is extremely easy to use. Brilliant Display Featuring the thinnest and most advanced Multi-Touch display ever made, the Apple iPhone 6 promises a high-contrast output with incredible colors and brightness on its 4.7 inch Retina HD display.
-                            | A resolution of 1334 x 750 pixels, clear wide-angle viewing and an improved polariser - the iPhone 6 truly offers a bigger and better display. Power-Packed Performance Thanks to the all-new A8 processor with 64-bit architecture and an advanced
-                            | 20 nanometre process, the iPhone 6 delivers an incredibly powerful performance while being extremely efficient. Get up to 50x faster CPU performance and up to 84x faster GPU performance with the iPhone 6. M8 Motion Coprocessor & Sensors Improve
-                            | your iPhone's power efficiency with the M8 Motion Coprocessor that continuously measures data from your iPhone's different sensors such as accelerometer, compass, gyroscope and the new barometer.
-                // Filters
+                // Products List
                 .row
-                  .col-sm-2
-                    h5.no-margin.m-b FILTERS
-                    .list-group.list-group-gap
-                      .checkbox
-                        label.ui-checks.ui-checks-md
-                          input(type='checkbox')
-                          i
-                          |  COD
-                      .checkbox
-                        label.ui-checks.ui-checks-md
-                          input(type='checkbox')
-                          i
-                          |  OFFER
-                      .checkbox
-                        label.ui-checks.ui-checks-md
-                          input(type='checkbox')
-                          i
-                          |  COUPONS
-                      .checkbox
-                        label.ui-checks.ui-checks-md
-                          input(type='checkbox')
-                          i
-                          |  OUT OF STOCK
-                  // /
-                  .col-sm-10
-                    .md-whiteframe-z0.bg-white
-                      ul.nav.nav-lines.nav-tabs.nav-justified
-                        li.active
-                          a(href='', data-toggle='tab', data-target='#tab_7') LOWEST PRICE
-                        li
-                          a(href='', data-toggle='tab', data-target='#tab_8') MOST RIVIEWED
-                        li
-                          a(href='', data-toggle='tab', data-target='#tab_9') MOST SCORED
-                      .tab-content.p.m-b-md.clear.b-t.b-t-2x
-                        #tab_7.tab-pane.animated.fadeInDown.active(role='tabpanel')
-                          .col-sm-12
-                            .col-sm-2
-                              img.img-responsive(src='/images/flip.png')
-                            .col-sm-2
-                              h5#ftitle  iphone 5s
-                            .col-sm-2
-                              h5 COD
-                              h5 EMI
-                              h5 RETURN POLICY : 10 Days
-                            .col-sm-2
-                              h5 2 -4 Days DELIVERY
-                              h5 COLOR : BLACK , WHITE
-                            .col-sm-2
-                              i#famt.mdi-editor-attach-money.i-24 31,200
-                            .col-sm-2
-                              a#fprodurl(href='')
-                                img.img-responsive(src='images/buy now.jpeg')
-                          .col-sm-12
-                            .col-sm-2
-                              img.img-responsive(src='/images/ebay.jpg')
-                            .col-sm-2
-                              h5#etitle  iphone 6s
-                            .col-sm-2
-                              h5 COD
-                              h5 EMI
-                              h5 RETURN POLICY : 10 Days
-                            .col-sm-2
-                              h5 2 -4 Days DELIVERY
-                              h5 COLOR : BLACK , WHITE
-                            .col-sm-2
-                              i#eamt.mdi-editor-attach-money.i-24 43,200
-                            .col-sm-2
-                              a#eprodurl(href='')
-                                img.img-responsive(src='images/buy now.jpeg')
-                        #tab_8.tab-pane.animated.fadeInDown(role='tabpanel')
-                          .col-sm-12
-                            .col-sm-2
-                              img.img-responsive(src='/images/ebay.jpg')
-                            .col-sm-2
-                              h5 Rating 4.5 / 5
-                            .col-sm-2
-                              h5 COD
-                              h5 EMI
-                              h5 RETURN POLICY : 10 Days
-                            .col-sm-2
-                              h5 2 -4 Days DELIVERY
-                              h5 COLOR : BLACK , WHITE
-                            .col-sm-2
-                              i.mdi-editor-attach-money.i-24 31,200
-                            .col-sm-2
-                              img.img-responsive(href='', src='/images/buy now.jpeg')
-                          .col-sm-12
-                            .col-sm-2
-                              img.img-responsive(src='/images/flip.png')
-                            .col-sm-2
-                              h5 Rating 4.5 / 5
-                            .col-sm-2
-                              h5 COD
-                              h5 EMI
-                              h5 RETURN POLICY : 10 Days
-                            .col-sm-2
-                              h5 2 -4 Days DELIVERY
-                              h5 COLOR : BLACK , WHITE
-                            .col-sm-2
-                              i.mdi-editor-attach-money.i-24 31,200
-                            .col-sm-2
-                              img.img-responsive(href='', src='/images/buy now.jpeg')
-                        #tab_9.tab-pane.animated.fadeInDown(role='tabpanel')
-                          .col-sm-12
-                            .col-sm-2
-                              img.img-responsive(src='/images/flip.png')
-                            .col-sm-2
-                              h5 Rating 4.5 / 5
-                            .col-sm-2
-                              h5 COD
-                              h5 EMI
-                              h5 RETURN POLICY : 10 Days
-                            .col-sm-2
-                              h5 2 -4 Days DELIVERY
-                              h5 COLOR : BLACK , WHITE
-                            .col-sm-2
-                              i.mdi-editor-attach-money.i-24 31,200
-                            .col-sm-2
-                              img.img-responsive(href='', src='/images/buy now.jpeg')
-                          .col-sm-12
-                            .col-sm-2
-                              img.img-responsive(src='/images/ebay.jpg')
-                            .col-sm-2
-                              h5 Rating 4.5 / 5
-                            .col-sm-2
-                              h5 COD
-                              h5 EMI
-                              h5 RETURN POLICY : 10 Days
-                            .col-sm-2
-                              h5 2 -4 Days DELIVERY
-                              h5 COLOR : BLACK , WHITE
-                            .col-sm-2
-                              i.mdi-editor-attach-money.i-24 31,200
-                            .col-sm-2
-                              img.img-responsive(href='', src='/images/buy now.jpeg')
+                  // flipkart list 
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl1.w-full.r-t( width="" ,src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#ftitle1 
+                        i#famt1 
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl2.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#ftitle2 
+                        i#famt2
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl3.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#ftitle3 
+                        i#famt3
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl4.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#ftitle4 
+                        i#famt4 
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl5.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#ftitle5 
+                        i#famt5 
+                  //ebay list
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl6.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#etitle1
+                        i#eamt1 
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl7.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#etitle2 
+                        i#eamt2
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl8.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#etitle3
+                        i#eamt3
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl9.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#etitle4 
+                        i#eamt4
+                  .col-sm-3
+                    .panel.panel-card
+                      .item
+                        img#fimgurl10.w-full.r-t( src='', alt='')
+                      button.md-btn.md-raised.md-fab.brown.m-r.md-fab-offset.pull-right(onclick='sendFilterData()', md-ink-ripple='')
+                      .p
+                        h3#etitle5 
+                        i#eamt5
+                // /
       // / content
     script(src='/javascripts/jquery.js')
     script(src='/javascripts/bootstrap.js')
     script(src='//code.jquery.com/jquery-1.12.0.min.js')
     script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(src='/javascripts/indexFormHelper.js')
+    script(src='/javascripts/indexFormHelper.js') 

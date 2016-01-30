@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('pricecut:server');
+var debug = require('debug')('searchlist:server');
 var http = require('http');
 
 /**
